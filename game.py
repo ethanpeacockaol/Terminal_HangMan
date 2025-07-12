@@ -20,7 +20,16 @@
 
 # TODO: we need to define an alphabet and only take a through z characters reject evertying else
 
+
+# define alphabet
+
 alphabet = ['a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+# get phrase for game
 phrase = input("Enter hangman phrase: ")
 print(f"This is the user's phrase:\n{phrase}")
+
+# check that phrase is only alphabetical characters
+allowed_chars_set = set(alphabet)
+test  = all(char in allowed_chars_set for char in phrase)
+print(test)
