@@ -17,3 +17,8 @@
 
 
 # TODO: we need to capture the phrase from the user
+
+# TODO: we need to define an alphabet and only take a through z characters reject evertying else
+
+phrase = input("Enter hangman phrase: ")
+print(f"This is the user's phrase:\n{phrase}")
