@@ -90,6 +90,58 @@ os.system('clear')
 os.system('figlet HELLO w | lolcat')
 os.system('figlet HELLO WOR | lolcat')
 os.system('clear')
+os.system('figlet Hello World | lolcat')
+os.system('clear')
+os.system('figlet HELLO WORLD | lolcat')
+os.system('clear')
+os.system('figlet BitCHES')
+
+
+
+
+os.system('clear')
+os.system('figlet Hello World | lolcat')
+os.system('clear')
+os.system('figlet HELLO WORLD | lolcat')
+os.system('clear')
+os.system('figlet BitCHES')
+os.system('clear')
+os.system('clear')
+os.system('figlet Hello World | lolcat')
+os.system('clear')
+os.system('figlet HELLO WORLD | lolcat')
+os.system('clear')
+os.system('figlet BitCHES')
+os.system('clear')
+os.system('clear')
+os.system('figlet Hello World | lolcat')
+os.system('clear')
+os.system('figlet HELLO WORLD | lolcat')
+os.system('clear')
+os.system('figlet BitCHES')
+os.system('clear')
+os.system('clear')
+os.system('figlet Hello World | lolcat')
+os.system('clear')
+os.system('figlet HELLO WORLD | lolcat')
+os.system('clear')
+os.system('figlet BitCHES')
+os.system('clear')
+os.system('clear')
+os.system('figlet Hello World | lolcat')
+os.system('clear')
+os.system('figlet HELLO WORLD | lolcat')
+os.system('clear')
+os.system('figlet BitCHES')
+os.system('clear')
+
+
+
+
+
+
+
+os.system('clear')
 os.system('figlet HELLO - | lolcat')
 os.system('clear')
 os.system('figlet HELLO --- | lolcat')
