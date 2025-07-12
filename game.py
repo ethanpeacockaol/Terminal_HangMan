@@ -30,7 +30,14 @@ import os
 import time
 os.system('clear')
 os.system('figlet Hello HangMan | lolcat')
-time.sleep(3.5)
+os.system('echo .')
+time.sleep(0.5)
+os.system('echo .')
+time.sleep(0.4)
+os.system('echo .')
+time.sleep(0.2)
+os.system('echo .')
+time.sleep(0.7)
 
 # define alphabet
 alphabet = [' ', 'a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -54,16 +61,63 @@ while go:
     else:
         # validate input to user to make sure phrase is correct
         os.system('clear')
-        print('hangman phrase ->')
         print('___________________________________________________________')
         print(f"{phrase}")
         print('___________________________________________________________')
-        print('is the phrase correct?')
-        yn = input("Y^N:").lower()
+        print('is the phrase correct?', end=" ")
+        yn = input("(Y^N):").lower()
 
         # can we break from input phrase loop yet?
         if yn == 'y' and onlyalphabeticalcharacters == True:
             go = False
 
 
+print(f"{phrase}")        
+os.system('clear')
+os.system('figlet Game Starting... | lolcat')
+time.sleep(1.2)
+os.system('clear')
+os.system('figlet H | lolcat')
+os.system('clear')
+os.system('figlet HE | lolcat')
+os.system('clear')
+os.system('figlet HEL | lolcat')
+os.system('clear')
+os.system('figlet HeLL | lolcat')
+os.system('clear')
+os.system('figlet HELLo | lolcat')
+os.system('clear')
+os.system('figlet HELLO w | lolcat')
+os.system('figlet HELLO WOR | lolcat')
+os.system('clear')
+os.system('figlet HELLO - | lolcat')
+os.system('clear')
+os.system('figlet HELLO --- | lolcat')
+os.system('clear')
+os.system('figlet HELLO H-- | lolcat')
+os.system('clear')
+os.system('figlet HELLO HA- | lolcat')
+os.system('clear')
+os.system('figlet HELLO HAN | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANG | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGM | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGMA | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGMAN | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGMAN | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGMAN | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGMAN | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGMAN | lolcat')
+os.system('clear')
+os.system('figlet HELLO HANGMAN | lolcat')
+time.sleep(3.2)
+# TODO: convert  the game start splash screen into a loop but for now procedural it for to get there quick
+# TODO: lint code, clean code, remove redundancies this redacted as fuck but we wanna build logic first right? right
 # TODO: hey add a go loop for phase validation and sanitization
