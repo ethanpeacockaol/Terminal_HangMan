@@ -23,28 +23,47 @@
 
 # TODO: truncate space from end of phrase if there is one or some
 
+
+
+
+import os
+import time
+os.system('clear')
+os.system('figlet Hello HangMan | lolcat')
+time.sleep(3.5)
+
 # define alphabet
 alphabet = [' ', 'a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# convert the alhabet into an allowed set of input
+allowed_chars_set = set(alphabet)
 
+
+# phrase input validation loop
 go = True
 while go:
-    # get input
+    # get phrase for the game
+    os.system('clear')
+    phrase = input("Enter hangman phrase: ")
+    #print(f"This is the user's phrase:\n{phrase}")
 
-    #validate input
+    # check that phrase is only alphabetical characters
+    onlyalphabeticalcharacters = all(char in allowed_chars_set for char in phrase)
+    if onlyalphabeticalcharacters == False:
+        print('only alphabetical characters and space characters are allowed :(')
+        time.sleep(5)
+    else:
+        # validate input to user to make sure phrase is correct
+        os.system('clear')
+        print('hangman phrase ->')
+        print('___________________________________________________________')
+        print(f"{phrase}")
+        print('___________________________________________________________')
+        print('is the phrase correct?')
+        yn = input("Y^N:").lower()
 
-    # validate input to user to make sure phrase is correct
+        # can we break from input phrase loop yet?
+        if yn == 'y' and onlyalphabeticalcharacters == True:
+            go = False
 
-    # repeat phrase catching until both are true
-
-    # exit go loop and start the game
-
-# get phrase for game
-phrase = input("Enter hangman phrase: ")
-print(f"This is the user's phrase:\n{phrase}")
-
-# check that phrase is only alphabetical characters
-allowed_chars_set = set(alphabet)
-test  = all(char in allowed_chars_set for char in phrase)
-#print(test)
 
 # TODO: hey add a go loop for phase validation and sanitization
