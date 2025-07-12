@@ -16,14 +16,15 @@
 # ____________ DOING ________________________________
 
 
-# TODO: we need to capture the phrase from the user
 
-# TODO: we need to define an alphabet and only take a through z characters reject evertying else
+# TODO: if the user writes a phrase that does not include alphabetical charcters or a space character ask them to repeat entry until its only alphabetical characters or space
 
+# TODO: before telling user to pass the phone to the opponent we need to validate that the phrase they entered is correct (Y/N) if yes start game for opponent, if no get user to re-enter phrase
+
+# TODO: truncate space from end of phrase if there is one or some
 
 # define alphabet
-
-alphabet = ['a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = [' ', 'a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 # get phrase for game
 phrase = input("Enter hangman phrase: ")
