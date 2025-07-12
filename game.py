@@ -118,6 +118,8 @@ os.system('figlet HELLO HANGMAN | lolcat')
 os.system('clear')
 os.system('figlet HELLO HANGMAN | lolcat')
 time.sleep(3.2)
+
+# TODO: print out the phrase like this example phrase == 'hey there' you should print "___ _____"
 # TODO: convert  the game start splash screen into a loop but for now procedural it for to get there quick
 # TODO: lint code, clean code, remove redundancies this redacted as fuck but we wanna build logic first right? right
 # TODO: hey add a go loop for phase validation and sanitization
