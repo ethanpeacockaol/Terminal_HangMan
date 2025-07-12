@@ -34,3 +34,5 @@ print(f"This is the user's phrase:\n{phrase}")
 allowed_chars_set = set(alphabet)
 test  = all(char in allowed_chars_set for char in phrase)
 print(test)
+
+# TODO: hey add a go loop for phase validation and sanitization
