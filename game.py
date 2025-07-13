@@ -28,9 +28,9 @@
 
 import os
 import time
-import splashscreens
+import animate
 
-splashscreens.hello_hangman()
+animate.hello_hangman()
 alphabet = [' ', 'a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 allowed_chars_set = set(alphabet)
 
@@ -54,7 +54,7 @@ while go:
             go = False
 
 
-splashscreens.loading_game()
+animate.loading_game()
 os.system('clear')
 _ = input("Please pass the phone to your opponent and hit Enter to start the game.")
 
