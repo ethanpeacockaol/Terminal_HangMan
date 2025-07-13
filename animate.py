@@ -180,7 +180,22 @@ hangmanrightarm = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |  
 hangmanlowertorso = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n"
 hangmanleftleg = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           /"
 hangmanfull = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           / \\"
+hangmanlist = [hangmanempty, hangmanhead, hangmanfirsttorso, hangmanleftarm, hangmanrightarm, hangmanlowertorso, hangmanleftleg, hangmanfull]
 
-def get_hangman_list():
-    return hangmanfull
-
+def draw_board(incorrect_guesses, incorrectletters, correctletters, phrase):
+    os.system('clear')
+    print(hangmanlist[incorrect_guesses])
+    print()
+    print()
+    print(f"Incorrect guesses: {incorrectletters}")
+    print()
+    print("Hidden Phrase:  ")
+    for char in phrase:
+        if char in correctletters:
+            print(char, end='')
+        if char == " ":
+            print(" ", end='')
+        else:
+            print("_", end='')
+    print()
+    print()

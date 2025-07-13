@@ -30,7 +30,7 @@ import os
 import time
 import animate
 
-animate.hello_hangman()
+#animate.hello_hangman()
 alphabet = [' ', 'a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 allowed_chars_set = set(alphabet)
 
@@ -54,17 +54,28 @@ while go:
             go = False
 
 
-animate.loading_game()
+#animate.loading_game()
 os.system('clear')
 _ = input("Please pass the phone to your opponent and hit Enter to start the game.")
 
 
+
+
+
+
+
+
+
+
+
+
 # so now we draw blank hangman, also the incorrect guesses box, also the blank phrase representation
 # TODO: so lets add all of the 8 strings that represent our state of the game into splashscreens, lets change splashscreens to animate.py since we are including more than just the cut scenes
+incorrect_guesses = 0
+incorrect_letters = []
+correct_letters = []
 
-
-
-
+animate.draw_board(incorrect_guesses, incorrect_letters, correct_letters, phrase)
 # TODO: print out the phrase like this example phrase == 'hey there' you should print "___ _____"
 # TODO: convert  the game start splash screen into a loop but for now procedural it for to get there quick
 # TODO: lint code, clean code, remove redundancies this redacted as fuck but we wanna build logic first right? right
