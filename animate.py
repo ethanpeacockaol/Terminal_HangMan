@@ -190,12 +190,20 @@ def draw_board(incorrect_guesses, incorrectletters, correctletters, phrase):
     print(f"Incorrect guesses: {incorrectletters}")
     print()
     print("Hidden Phrase:  ")
+    go = True
+    hidden_phrase = ""
     for char in phrase:
         if char in correctletters:
-            print(char, end='')
+            hidden_phrase += char
         if char == " ":
-            print(" ", end='')
+            hidden_phrase += " "
         if char != " " and char not in correctletters:
-            print("_", end='')
+            hidden_phrase += "_"
+    print(hidden_phrase)
+    if hidden_phrase == phrase:
+        print("You won and your hangman buddy only got hurt a lil but he alive :D!")
+        time.sleep(3)
+        go = False
     print()
     print()
+    return go

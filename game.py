@@ -39,16 +39,23 @@ correct_letters = []
 guessalphabet = alphabet.copy()
 del(guessalphabet[0])
 allowed_guess_set = set(guessalphabet)
+max_incorrect_guesses = 7
 
 go = True
 while go:
     os.system('clear')
-    animate.draw_board(incorrect_guesses, incorrect_letters, correct_letters, phrase)
+    go = animate.draw_board(incorrect_guesses, incorrect_letters, correct_letters, phrase)
+    if incorrect_guesses == max_incorrect_guesses:
+        go = False
+        print("\n\nYou lose and you let your lil hangman buddy die :(")
+        time.sleep(2)
+    if go == False:
+        break
     guess = input("Please guess an alphabetical charcter: ")
     guess = guess.lower()
     guess_single_char = len(guess) == 1
     guessonlyalphabet = all(char in allowed_guess_set for char in guess)
-    if guess_single_char == True and guessonlyalphabet == True:
+    if guess_single_char == True and guessonlyalphabet == True and guess not in incorrect_letters:
         if guess in phrase:
             correct_letters += guess
         if guess not in phrase:
