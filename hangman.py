@@ -2,9 +2,9 @@ hangmanfull = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |      
 hangmanempty = "dont let me die friend!\n  |--------\\\n  |           \n  |           \n__|__"
 hangmanhead = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |           \n__|__"
 
+hangmanfirsttorso = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |         |\n"
 
-
-print(hangmanhead)
+print(hangmanfirsttorso)
 
 
 # we wanna draw just the stand, then his head, then his first half of body, then left arm, then right arm, then lower half of body, then left leg, then right leg and he dead
