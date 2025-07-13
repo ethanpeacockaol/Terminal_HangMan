@@ -28,17 +28,8 @@
 
 import os
 import time
-os.system('clear')
-os.system('figlet Hello HangMan | lolcat')
-os.system('echo .')
-time.sleep(0.5)
-os.system('echo .')
-time.sleep(0.4)
-os.system('echo .')
-time.sleep(0.2)
-os.system('echo .')
-time.sleep(0.7)
-
+import splashscreens
+splashscreens.hello_hangman()
 # define alphabet
 alphabet = [' ', 'a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 # convert the alhabet into an allowed set of input
