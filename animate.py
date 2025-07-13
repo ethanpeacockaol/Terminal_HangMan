@@ -195,7 +195,7 @@ def draw_board(incorrect_guesses, incorrectletters, correctletters, phrase):
             print(char, end='')
         if char == " ":
             print(" ", end='')
-        else:
+        if char != " " and char not in correctletters:
             print("_", end='')
     print()
     print()
