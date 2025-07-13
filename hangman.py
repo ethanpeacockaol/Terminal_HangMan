@@ -1,10 +1,13 @@
-hangmanfull = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           / \\"
 hangmanempty = "dont let me die friend!\n  |--------\\\n  |           \n  |           \n__|__"
 hangmanhead = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |           \n__|__"
-hangmanfirsttorso = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |         |\n"
-hangmanleftarm = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\n"
-hangmanrightarm = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n"
+hangmanfirsttorso = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |         |\n__|__"
+hangmanleftarm = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\n__|__"
+hangmanrightarm = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__"     # TODO: hey add the b
+hangmanlowertorso = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n"
+hangmanleftleg = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           /"
 hangmanfull = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           / \\"
+
+
 
 print(hangmanrightarm)
 
