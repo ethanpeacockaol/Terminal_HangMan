@@ -47,7 +47,11 @@ while go:
     guess_single_char = len(guess) == 1
     guessonlyalphabet = all(char in allowed_guess_set for char in guess)
     if guess_single_char == True and guessonlyalphabet == True:
-        print('continue')
+        if guess in phrase:
+            print('fuck do this later')
+        if guess not in phrase:
+            incorrect_letters += guess
+            incorrect_guesses += 1
     else:
         print("\n\nhey you didnt make a correct guess selection, please try again :(")
         time.sleep(3)
