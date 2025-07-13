@@ -55,9 +55,12 @@ while go:
 
 
 splashscreens.loading_game()
+os.system('clear')
+_ = input("Please pass the phone to your opponent and hit Enter to start the game.")
 
 
-
+# so now we draw blank hangman, also the incorrect guesses box, also the blank phrase representation
+# TODO: so lets add all of the 8 strings that represent our state of the game into splashscreens, lets change splashscreens to animate.py since we are including more than just the cut scenes
 
 
 
