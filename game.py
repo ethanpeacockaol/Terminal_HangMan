@@ -1,31 +1,5 @@
 # Terminal Hangman
 
-
-# TODO: we need to tell the user to pass the phone to their opponent
-
-# TODO: we need to get a letter guess from the oponent
-
-# TODO: if the letter is in the phrase we need to update the blank representations to include the correctly guessed letter
-
-# TODO: if the letter is not in the phrase we need to draws a  piece of the hangman and add the letter to the incorrect guesses list
-
-# TODO: we need to draw a blank represenetation of the phrase so the user can see the length of the statement as the play the game
-
-
-
-# ____________ DOING ________________________________
-
-
-
-# TODO: if the user writes a phrase that does not include alphabetical charcters or a space character ask them to repeat entry until its only alphabetical characters or space
-
-# TODO: before telling user to pass the phone to the opponent we need to validate that the phrase they entered is correct (Y/N) if yes start game for opponent, if no get user to re-enter phrase
-
-# TODO: truncate space from end of phrase if there is one or some
-
-
-
-
 import os
 import time
 import animate
@@ -58,25 +32,26 @@ while go:
 os.system('clear')
 _ = input("Please pass the phone to your opponent and hit Enter to start the game.")
 
-
-
-
-
-
-
-
-
-
-
-
-# so now we draw blank hangman, also the incorrect guesses box, also the blank phrase representation
-# TODO: so lets add all of the 8 strings that represent our state of the game into splashscreens, lets change splashscreens to animate.py since we are including more than just the cut scenes
 incorrect_guesses = 0
 incorrect_letters = []
 correct_letters = []
+guessalphabet = alphabet.copy()
+del(guessalphabet[0])
+allowed_guess_set = set(guessalphabet)
 
-animate.draw_board(incorrect_guesses, incorrect_letters, correct_letters, phrase)
-# TODO: print out the phrase like this example phrase == 'hey there' you should print "___ _____"
-# TODO: convert  the game start splash screen into a loop but for now procedural it for to get there quick
-# TODO: lint code, clean code, remove redundancies this redacted as fuck but we wanna build logic first right? right
-# TODO: hey add a go loop for phase validation and sanitization
+go = True
+while go:
+    os.system('clear')
+    animate.draw_board(incorrect_guesses, incorrect_letters, correct_letters, phrase)
+    guess = input("Please guess an alphabetical charcter: ")
+    guess_single_char = len(guess) == 1
+    guessonlyalphabet = all(char in allowed_guess_set for char in guess)
+    if guess_single_char == True and guessonlyalphabet == True:
+        print('continue')
+    else:
+        print("\n\nhey you didnt make a correct guess selection, please try again :(")
+        time.sleep(3)
+    
+    
+    
+
