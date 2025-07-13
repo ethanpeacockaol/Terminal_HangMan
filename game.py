@@ -4,7 +4,7 @@ import os
 import time
 import animate
 
-#animate.hello_hangman()
+animate.hello_hangman()
 alphabet = [' ', 'a', 'b', 'c', 'd',  'e', 'f', 'g',  'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 allowed_chars_set = set(alphabet)
 
@@ -28,8 +28,7 @@ while go:
         if yn == 'y' and onlyalphabeticalcharacters == True:
             go = False
 
-
-#animate.loading_game()
+animate.loading_game()
 os.system('clear')
 _ = input("Please pass the phone to your opponent and hit Enter to start the game.")
 
@@ -64,7 +63,4 @@ while go:
     else:
         print("\n\nhey you didnt make a correct guess selection, please try again :(")
         time.sleep(3)
-    
-    
-    
 
