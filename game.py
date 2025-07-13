@@ -12,6 +12,7 @@ go = True
 while go:
     os.system('clear')
     phrase = input("Enter hangman phrase: ")
+    phrase = phrase.lower()
     onlyalphabeticalcharacters = all(char in allowed_chars_set for char in phrase)
     if onlyalphabeticalcharacters == False:
         print('only alphabetical characters and space characters are allowed :(')
@@ -44,11 +45,12 @@ while go:
     os.system('clear')
     animate.draw_board(incorrect_guesses, incorrect_letters, correct_letters, phrase)
     guess = input("Please guess an alphabetical charcter: ")
+    guess = guess.lower()
     guess_single_char = len(guess) == 1
     guessonlyalphabet = all(char in allowed_guess_set for char in guess)
     if guess_single_char == True and guessonlyalphabet == True:
         if guess in phrase:
-            print('fuck do this later')
+            correct_letters += guess
         if guess not in phrase:
             incorrect_letters += guess
             incorrect_guesses += 1
