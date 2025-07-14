@@ -22,3 +22,16 @@ for frame in hangmanlist:
     print(frame)
     time.sleep(2)
     os.system("clear")
+
+
+
+losebanner = ['you lose!', '        you lose!']
+uhh = 0
+for i in range(50): 
+    os.system("clear")
+    print(losebanner[uhh])
+    if i % 2 == 0:
+        uhh -= 1
+    else:
+        uhh += 1
+    time.sleep(1) 
