@@ -8,30 +8,33 @@ import time
 
 
 
-hangmanempty = "dont let me die friend!\n  |--------\\\n  |           \n  |           \n__|__"
-hangmanhead = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |           \n__|__"
-hangmanfirsttorso = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |         |\n__|__"
-hangmanleftarm = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\n__|__"
-hangmanrightarm = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__"
-hangmanlowertorso = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n"
-hangmanleftleg = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           /"
-hangmanfull = "dont let me die friend!\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           / \\"
+hangmanempty = "uh oh\n  |--------\\\n  |           \n  |           \n__|__"
+hangmanhead = "uh oh\n  |--------\\\n  |        [ ]\n  |           \n__|__"
+hangmanfirsttorso = "uh oh\n  |--------\\\n  |        [ ]\n  |         |\n__|__"
+hangmanleftarm = "uh oh\n  |--------\\\n  |        [ ]\n  |        /|\n__|__"
+hangmanrightarm = "uh oh\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__"
+hangmanlowertorso = "uh oh\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n"
+hangmanleftleg = "uh oh\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           /"
+hangmanfull = "uh oh\n  |--------\\\n  |        [ ]\n  |        /|\\\n__|__       |\n           / \\"
 hangmanlist = [hangmanempty, hangmanhead, hangmanfirsttorso, hangmanleftarm, hangmanrightarm, hangmanlowertorso, hangmanleftleg, hangmanfull]
+
+
+os.system('clear')
 
 for frame in hangmanlist:
     print(frame)
-    time.sleep(2)
+    time.sleep(1)
     os.system("clear")
 
 
 
-losebanner = ['you lose!', '        you lose!']
+losebanner = ['you lose!', '                                             you lose!']
 uhh = 0
-for i in range(50): 
+for i in range(20): 
     os.system("clear")
     print(losebanner[uhh])
     if i % 2 == 0:
         uhh -= 1
     else:
         uhh += 1
-    time.sleep(1) 
+    time.sleep(0.5) 

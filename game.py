@@ -48,6 +48,7 @@ while go:
         go = False
         print("\n\nYou lose and you let your lil hangman buddy die :(")
         time.sleep(2)
+        os.system("python explode.py")
     if go == False:
         break
     guess = input("Please guess an alphabetical charcter: ")
